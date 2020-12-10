@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """Lockboxes: determines if all the boxes can be opened."""
 
 
@@ -7,7 +7,7 @@ def canUnlockAll(boxes):
     Description: determines if all the boxes can be opened.
     boxes: is a list of lists
     returns: True in case that all boxes can be opened, False otherwise
-    # """
+    """
     unlock = []
     keys = []
     lg = len(boxes)
