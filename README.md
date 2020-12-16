@@ -22,6 +22,7 @@ Technical interview questions: algorithms and data structures.
 ## Directory Description
 
 [0x00-lockboxes](0x00-lockboxes) - Lockboxes problem
+[0x01-insert_in_sorted_linked_list](0x01-insert_in_sorted_linked_list) - Insert a value in a descending sorted linked list
 
 
 ## Authors
