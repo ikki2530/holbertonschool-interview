@@ -48,7 +48,6 @@ int binary_tree_balance(heap_t *tree)
 /**
  * print_level - recursive function to print each level
  * @tree: pointer to the root node of the tree to traverse
- * @func: pointer to a function to call for each node.
  * @level: current level to print
  * Return: Nothing
  */
@@ -89,7 +88,6 @@ heap_t *print_level(heap_t *tree, int level)
 /**
  * print_tree_level - goes through levels in the binary tree
  * @tree: pointer to the root node of the tree to traverse
- * @func: pointer to a function to call for each node.
  * Return: NOthing
  */
 heap_t *print_tree_level(heap_t *tree)
