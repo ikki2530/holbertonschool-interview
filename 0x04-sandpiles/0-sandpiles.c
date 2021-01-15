@@ -21,12 +21,11 @@ static void print_grid(int grid[3][3])
 }
 
 /**
- * is_stable - checks if sand pile is stable.
- *
- * @grid: grid to be checked.
+ * stable - checks if sand pile is stable.
+ * @grid: to be checked.
  * Return: 1 if stable 0 if not.
  */
-int is_stable(int grid[3][3])
+int stable(int grid[3][3])
 {
 	int i, j;
 
@@ -42,13 +41,13 @@ int is_stable(int grid[3][3])
 }
 
 /**
- * sandpiles_simple_sum - sums sandpiles.
+ * sandpiles_short_sum - sums sandpiles.
  *
  * @grid1: grid1.
  * @grid2: grid2.
  * The simple sand pile sum (without topping).
  */
-void sandpiles_simple_sum(int grid1[3][3], int grid2[3][3])
+void sandpiles_short_sum(int grid1[3][3], int grid2[3][3])
 {
 	int i, j, w = 0;
 
@@ -73,9 +72,9 @@ void sandpiles_sum(int grid1[3][3], int grid2[3][3])
 {
 	int i, j;
 
-	sandpiles_simple_sum(grid1, grid2);
+	sandpiles_short_sum(grid1, grid2);
 
-	while (!(is_stable(grid1)))
+	while (!(stable(grid1)))
 	{
 		printf("=\n");
 		print_grid(grid1);
