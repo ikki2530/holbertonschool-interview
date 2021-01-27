@@ -30,11 +30,11 @@ try:
             cont += 1
             if cont % 10 == 0:
                 print("File size: {}".format(sz))
-                for k, v in count_status.items():
+                for k, v in sorted(count_status.items()):
                     if v != 0:
                         print("{}: {}".format(k, v))
-finally:
+except Exception:
     print("File size: {}".format(sz))
-    for k, v in count_status.items():
+    for k, v in sorted(count_status.items()):
         if v != 0:
             print("{}: {}".format(k, v))
