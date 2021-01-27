@@ -3,7 +3,6 @@
 Reads stdin line by line and computes metrics
 """
 import sys
-import re
 
 
 cont = 0
@@ -14,9 +13,9 @@ count_status = {"200": 0, "301": 0, "400": 0, "401": 0,
 try:
     for line in sys.stdin:
         # print("$", line)
-        ip = re.findall(r"\d+\.\d+\.\d+\.\d+", line)
-        date = re.findall(r"\d+-\d+-\d+ [\d.:]+", line)
-        get = re.findall(r"GET [/.\d\w\s]+", line)
+        # ip = re.findall(r"\d+\.\d+\.\d+\.\d+", line)
+        # date = re.findall(r"\d+-\d+-\d+ [\d.:]+", line)
+        # get = re.findall(r"GET [/.\d\w\s]+", line)
         line_split = line.split()
         status = line_split[-2]
         size = line_split[-1]
