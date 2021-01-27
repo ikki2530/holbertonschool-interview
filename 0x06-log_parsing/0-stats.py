@@ -33,7 +33,7 @@ try:
                 for k, v in sorted(count_status.items()):
                     if v != 0:
                         print("{}: {}".format(k, v))
-except Exception:
+finally:
     print("File size: {}".format(sz))
     for k, v in sorted(count_status.items()):
         if v != 0:
